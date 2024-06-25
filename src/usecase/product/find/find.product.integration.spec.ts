@@ -14,8 +14,8 @@ describe("Integration Test find product use case", () => {
             logging: false,
             sync: { force: true },
         });
-    await sequelize.addModels([ProductModel]);
-    await sequelize.sync();
+        sequelize.addModels([ProductModel]);
+        await sequelize.sync();
     });
 
     afterEach(async () => {
