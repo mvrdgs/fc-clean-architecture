@@ -25,8 +25,6 @@ describe("Unit Test create product use case", () => {
 
         const output = await productCreateUseCase.execute(input);
 
-        console.log(output);
-
         expect(output).toMatchObject({
             id: expect.any(String),
             name: input.name,
